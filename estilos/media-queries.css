@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 
-@media screen and (max-width: 768px) and (orientation: landscape) {
+@media screen and (max-height: 450px) and (orientation: landscape) {
     body {
         background-color: var(--cor2);
     }
