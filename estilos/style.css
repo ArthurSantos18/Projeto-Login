@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 :root {
-    --cor1: #3d9ac9;
+    --cor1: #7bc8ee;
     --cor2: #f37847;
 }
 
@@ -31,8 +31,8 @@ section#login {
     transform: translate(-50%, -50%);
     overflow: hidden;
 
-    background-color: white;
-    height: 500px;
+    background-color: rgb(225, 247, 250);
+    height: 515px;
     width: 250px;
     border-radius: 20px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.418);  
@@ -51,4 +51,94 @@ section#login > div#imagem {
 section#login > div#formulario {
     display: block;
     padding: 10px;
+}
+
+div#formulario {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-size: 0.8em;
+}
+
+form > div.campo {
+    background-color: var(--cor2);
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 8px 0px;
+}
+
+div.campo > label {
+    display: none;
+}
+
+div.campo > span {
+    color:white;
+    font-size: 2em;
+    width: 40px;
+    margin-left: 0px;
+    padding: 5px;
+
+    border-radius: 8px;
+}
+
+div.campo > input {
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    background-color: #dcf0fa;
+    transform: translatey(-10px);
+    border: 2px solid var(--cor2);
+    border-radius: 8px;
+    padding: 5px;
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor1);
+    color: rgba(0, 0, 0, 0.671);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+form > input[type=submit]:hover {
+    background-color: #2c93c7;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.849);
+    border: 1px solid #2c93c7;
+    border-radius: 5px;
+    text-decoration: none;
+    padding-top: 5px;
+    margin-top: 3px;
+}
+
+form > a.botao:hover {
+    background-color: #c0e5f7;
+}
+
+form > a.botao > span {
+    margin-top: 2px;
+    font-size: 1em;
+    position: relative;
+    top: 1px;
 }
